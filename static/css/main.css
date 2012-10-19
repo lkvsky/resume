@@ -1,41 +1,49 @@
 header {
-			text-align: center;
-		}
-		footer {
-			text-align: center;
-			padding-bottom: 20px;
-		}
-		h2:nth-child(4) {
-			text-align: center;
-		}
-		#wrapper {
-			margin: auto;
-			width: 90%;
-		}
-		#contact-info {
-			text-align: center;
-		}
-		.job {
-			padding: 10px;
-		}
-		.job:nth-child(3), .job:nth-child(5) {
-			background-color: #F9F9F9;
-			border-top: #DDD;
-			border-bottom: #DDD;
-			border-top-width: .75px;
-			border-bottom-width: .75px;
-			border-top-style: solid;
-			border-bottom-style: solid;
-		}
+	text-align: center;
+}
+footer {
+	text-align: center;
+	padding-bottom: 20px;
+}
+h2:nth-child(6) {
+	text-align: center;
+}
+div img {
+	margin-top: 10px;
+}
+#wrapper {
+	margin: auto;
+	width: 90%;
+}
+#contact-info {
+	text-align: center;
+}
+.job {
+	padding: 10px;
+}
+.job:nth-child(3), .job:nth-child(5) {
+	background-color: #F9F9F9;
+	border-top: #DDD;
+	border-bottom: #DDD;
+	border-top-width: .75px;
+	border-bottom-width: .75px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+}
+.project-thumb {
+	font-size: 70%;
+	text-align: center;
+	font-style: italic;
+}
 
-		@media print {
-			.row {
-				page-break-inside: avoid;
-			}
-			a {
-				color: #333;
-			}
-			footer {
-				display: none;
-			}
-		}
+@media print {
+	.row {
+		page-break-inside: avoid;
+	}
+	a {
+		color: #333;
+	}
+	footer {
+		display: none;
+	}
+}
