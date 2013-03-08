@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 	<head>
 		<title>Kyle Lucovsky's Resume</title>
@@ -10,11 +10,11 @@
 		<link rel="stylesheet" href="static/css/main.css">
 	</head>
 	<body>
-		<div id="wrapper">
+		<div class="container">
 			<header class="page-header">
-				<h1>Kyle Lucovsky <small>Front-End Web Developer</small></h1>
-				<div id="contact-info">
-				San Francisco, CA | (805) 252-7299 | <a href="mailto:kyle@lucovsky.com">kyle@lucovsky.com</a>
+				<h1>Kyle Lucovsky <small>Web Developer</small></h1>
+				<div class="contact-info">
+				San Francisco, CA | (805) 252-7299 | <a href="mailto:kyle@lucovsky.com">kyle@lucovsky.com</a> | <a href="http://github.com/lkvsky" target="_blank">GitHub</a>
 			</div>
 			</header>
 			<div id="resume">
@@ -23,7 +23,7 @@
 						<h2>Introduction</h2>
 					</div>
 					<div class="span9">
-						<p>I began my foray into web development in May 2012 having spent most of my professional career on the digital marketing and product side. I intend to draw on what I've learned in order to build intuitive, semantic, responsive digital media experiences across all platforms. I want to collaborate with and learn from a web development team focused on optimizing the user experience.</p>
+						<p>I'm a newly-trained, full stack web developer with a passion for design and digital media. After some experience working in marketing and product management, I began learning JavaScript and client-side technologies in my free time during the summer/fall of 2012. I enrolled in <a href="http://www.appacademy.io" target="_blank">App Academy's 9 week, intensive Rails program</a> this past January to fully pursue my new-found passion for web development. I'm eager to continue learning and working with others to innovate and optimize how we consume media on the web.</p>
 					</div>
 				</div>
 				<div class="row">
@@ -32,33 +32,49 @@
 					</div>
 					<div class="span4">
 						<h4>Languages and Skills</h4>
-						<p>JavaScript, JQuery, CSS3, HTML5, DOM, Python</p>
+						<p>JavaScript, Ruby, JQuery, CSS3, HTML5, DOM, Python, SQL</p>
 					</div>
 					<div class="span4">
 						<h4>Frameworks and Tools</h4>
-						<p>Backbone.js, Require.js, Grunt.js, Underscore.js, Handlebars.js, Jasmine</p>
+						<p>Rails, Backbone.js, Require.js, Underscore.js, Handlebars.js, Jasmine, RSpec, Heroku, PostgreSQL</p>
 					</div>
 				</div>
 				<hr>
-				<h2>My Projects</h2>
-				<div class="row">
+				<h2>My Live Code</h2>
+				<div class="row break-before">
 					<div class="span3 project-thumb">
-						<img src="static/img/best-coast.png" class="thumbnail img-polaroid">
+						<a href="static/img/mycoachella-home.png" target="_blank">
+							<img src="static/img/mycoachella-home.png" class="thumbnail img-polaroid">
+						</a>
+						<p>My Coachella logged-in desktop experience</p>
+					</div>
+					<div class="span9">
+						<h4><a href="http://mycoachella.herokuapp.com" target="_blank">My Coachella</a></h4>
+						<p>My Coachella is a single page web app built on Rails, AJAX, Devise/Omniauth for authentication and the YouTube JavaScript/iframe API. Templating is all done on the client-side via Handlebars. I started with scripts that scraped Coachella's website to get band info for the artists, then fetched YouTube tracks for each artist based on their YouTube channels. Users can log-in by signing up for an account or authenticating through Facebook. If a user signs up during his/her guest session, all playlists and favorite/hated songs get transferred over from the to their newly created account. The app allows users to generate random playlists that the user can edit as he or she pleases. Users can "Like" their favorite artists to create an auto-playlist of their favorite songs, or they can "Hate" songs that they never want to show up again in their playlists. Tour the code on <a href="https://github.com/lkvsky/coachella" target="_blank">GitHub</a>.</p>
+					</div>
+				</div>
+				<div class="row break-before">
+					<div class="span3 project-thumb">
+						<a href="static/img/instavention.png" target="_blank">
+							<img src="static/img/instavention.png" class="thumbnail img-polaroid">
+						</a>
+						<p>Instavention game play experience</p>
+					</div>
+					<div class="span9">
+						<h4><a href="http://instavention.herokuapp.com" target="_blank">Instavention</a></h4>
+						<p>This is my first live Backbone app and first experience using Rails as a Backbone back-end. It's a photo guessing game using the Instagram API. Users can log in and authenticate with their Instagram credentials and play the game using their own feeds, or log in as a guest for a quick play experience with the most popular photos on Instagram. The project is currently optimized for a desktop/tablet experience, but I plan on building it out to be a more mobile-friendly experience. Keep track of my progress on my <a href="https://github.com/lkvsky/instavention" target="_blank">GitHub repo</a>.</p>
+					</div>
+				</div>
+				<div class="row break-before">
+					<div class="span3 project-thumb">
+						<a href="static/img/best-coast.png" target="_blank">
+							<img src="static/img/best-coast.png" class="thumbnail img-polaroid">
+						</a>
 						<p>Best Coast Eats Local search for San Francisco</p>
 					</div>
 					<div class="span9">
 						<h4><a href="http://bestcoasteats.appspot.com" target="_blank">Best Coast Eats Local</a></h4>
-						<p>This is my first live project: a West Coast farmer's market finder and API mashup. I built this foundationally using the Google maps API and a USDA data-driven farmer's market API. The market API is not terribly performant, so I make use of the HTML5 Local Storage API for faster repeat visits. The info windows are templatized using Handlebars and trigger geo-location-based Flickr API calls.</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="span3 project-thumb">
-						<img src="static/img/diva-hour.png" class="thumbnail img-polaroid">
-						<p>Diva Power Hour admin interface</p>
-					</div>
-					<div class="span9">
-						<h4><a href="http://www.github.com/lkvsky/music-video-app" target="_blank">Diva Power Hour</a></h4>
-						<p>I'm currently developing a Backbone.js and Python-based music video app where users will be able to auto-generate, edit and save music video playlists. I'm also using Require.js for module loading, Grunt.js for concatination and minification. Visit my <a href="http://www.github.com/lkvsky/music-video-app" target="_blank">GitHub</a> to checkout my progress.</p>
+						<p>I wrote my first project last fall: a responsive/mobile-friendly West Coast farmer's market finder and API mashup. The app was build foundationally using the Google maps API and a USDA data-driven farmer's market API. The market API is not terribly performant, so I make use of the HTML5 Local Storage API for faster repeat visits. The info windows are templatized using Handlebars and trigger geo-location-based Flickr API calls.</p>
 					</div>
 				</div>
 				<hr>
@@ -69,22 +85,11 @@
 						<h4><a href="http://www.yahoo.com" target="_blank">Yahoo, Inc.</a></h4>
 						<strong>Product Manager</strong>
 						<br>
-						<em>August 2011 - Now</em>
+						<em>August 2011 - December 2012</em>
 					</div>
 					<div class="span9">
-						<p>I draft product specifications for and help coordinate the build and iteration of a brand new set of publishing tools for Yahoo! editors worldwide. My focus has been on search: improving and optimizing how editors find content to make informed programming decisions. I am currently developing specs to re-imagine how editors publish and curate articles and blog posts for our media verticals.</p>
-						<p>Additionally, I manage the product support and iteration of the company’s user-generated content platform, <a href="http://contributor.yahoo.com" target="_blank">Yahoo! Contributor Network</a>, and its applications in <a href="http://br.contribuidores.yahoo.com" target="_blank">Brazil</a> and the <a href="http://uk.contributor.yahoo.com" target="_blank">UK</a>. I helped oversee the Beta launches of both international versions.</p>
-					</div>
-				</div>
-				<div class="job row">
-					<div class="span3 job-title">
-						<h4><a href="http://www.rubykobo.com" target="_blank">Ruby Kobo</a></h4>
-						<strong>Sales Assistant</strong>
-						<br>
-						<em>September 2010 - March 2011</em>
-					</div>
-					<div class="span9">
-						<p>My internship focused on assisting sales operations for Ruby Kobo’s costume jewelry line, <a href="http://www.shopshashi.com" target="_blank">Shashi</a>. I spent most of my time contacting new stores to increase Shashi sales in our target cities, drafting invoices with Adobe Quickbooks and updating the website with press and collection information.</p>
+						<p>I drafted product specifications for and helped coordinate the build of a brand new set of publishing tools for Yahoo! editors worldwide. My focus was on search: improving and optimizing how editors found content to make informed programming decisions.</p>
+						<p>Additionally, I managed the product support and iteration of the company’s user-generated content platform, <a href="http://contributor.yahoo.com" target="_blank">Yahoo! Contributor Network</a>, and its applications in <a href="http://br.contribuidores.yahoo.com" target="_blank">Brazil</a> and the <a href="http://uk.contributor.yahoo.com" target="_blank">UK</a>. I helped oversee the Beta launches of both international versions.</p>
 					</div>
 				</div>
 				<div class="job row">
@@ -111,19 +116,32 @@
 						<p>Outside of my standard scope of duties, I tracked down archived Michael Jackson coverage to aid our breaking news hub for the deceased artist. I also published two blog entries to the website’s award-winning PopWatch blog and an evergreen <a href="http://www.ew.com/ew/gallery/0,,20312226_20400366,00.html" target="_blank">photo gallery</a> documenting Lindsay Lohan’s career highs and lows.</p>
 					</div>
 				</div>
-				<hr>
-				<div class="row">
-					<div class="span3">
-						<h2>Education</h2>
+				<div class="job row">
+					<div class="span3 job-title">
+						<h4><a href="http://www.rubykobo.com" target="_blank">Ruby Kobo</a></h4>
+						<strong>Sales Assistant</strong>
+						<br>
+						<em>September 2010 - March 2011</em>
 					</div>
+					<div class="span9">
+						<p>My internship focused on assisting sales operations for Ruby Kobo’s costume jewelry line, <a href="http://www.shopshashi.com" target="_blank">Shashi</a>. I spent most of my time contacting new stores to increase Shashi sales in our target cities, drafting invoices with Adobe Quickbooks and updating the website with press and collection information.</p>
+					</div>
+				</div>
+				<hr>
+				<h2>Education</h2>
+				<div class="row">
 					<div class="span4">
 						<h4><a href="http://www.nyu.edu" target="_blank">New York University</a></h4>
 						<strong>B.A., Politics and Studio Art</strong>
 						<p>I graduated in May 2011 with a GPA of 3.498, and made the Dean’s List fall 2007 and spring 2008</p>
 					</div>
 					<div class="span4">
+						<h4><a href="http://www.appacademy.io" target="_blank">App Academy</a></h4>
+						<p>I am currently wrapping up App Academy's intensive Rails course. The curriculum spans the entire Rails web stack, starting with two weeks of Ruby fundamentals, ending with JavaScript and two weeks of final projects. Check out the curriculum <a href="http://www.appacademy.io/#p-curriculum" target="_blank">here</a>.</p>
+					</div>
+					<div class="span4">
 						<h4><a href="http://www.pamelafox.org" target="_blank">Private Tutoring</a></h4>
-						<p>I spent my post-work evenings over the past few months working with <a href="http://www.pamelafox.org" target="_blank">Pamela Fox</a>, who introduced me to web development with a focus on JavaScript and other modern skills/tools.
+						<p>I spent my post-work evenings during the summer/early fall of 2012 working with <a href="http://www.pamelafox.org" target="_blank">Pamela Fox</a>, who introduced me to web development with a focus on JavaScript and other modern skills/tools.
 					</div>
 				</div>
 			</div>
